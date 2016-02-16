@@ -159,7 +159,7 @@ div.container {
   background-color: white;
 }
 
-.fuente-03 {
+#fuente-03 {
   height: 100%;
   background-color: #3BD854;
 }
@@ -307,4 +307,21 @@ ul.lista-recolectores li img {
 
 #acopio-09 .header {
   text-align: center;
+}
+
+#fuente-03 .franja-oliva .col-md-3 {
+    height: 120px;
+    padding-top: 25px;
+    width: 100%;
+}
+
+#fuente-03 .franja-oliva .col-md-3 img {
+  float: left;
+  height: 90px;
+  margin: 0 20px;
+}
+
+#fuente-03 .franja-oliva .col-md-3 h2 {
+  float: left;
+  height: 90px;
 }
