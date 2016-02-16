@@ -168,8 +168,9 @@ div.container {
   border-radius: 50%;
 }
 
-.nombre-recolector {
+.nombre-recolector h1 {
   color: #39D153;
+  font-weight: 500;
 }
 
 .confirmar-recogida span {
@@ -324,4 +325,12 @@ ul.lista-recolectores li img {
 #fuente-03 .franja-oliva .col-md-3 h2 {
   float: left;
   height: 90px;
+}
+
+img.reciclaje-gris {
+  height: 90px;
+}
+
+.asignado-label {
+  margin: 30px 0;
 }
