@@ -1,0 +1,26 @@
+{
+  "name": "proyectomax",
+  "version": "1.0.0",
+  "description": "Proyecto MAX",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "0.12.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:santiago/heroku-test.git"
+  },
+  "author": "Santiago GL <sgaviria@gmail.com> (http://github.com/santiago)",
+  "license": "Copyright Monimus, LLC",
+  "bugs": {
+    "url": "https://github.com/wrkbench/detect-device-webapp/issues"
+  },
+  "homepage": "https://github.com/wrkbench/detect-device-webapp",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}

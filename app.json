@@ -1,0 +1,8 @@
+{
+  "name": "ProyecyoMAX",
+  "description": "ProyectoMAX",
+  "repository": "https://github.com/santiago/proyectomax",
+  "logo": "",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
+}
