@@ -4,6 +4,7 @@ h1,h2,h3,h4,h5 {
 
 .green-header {
   color: #39D153;
+  font-weight: 500;
 }
 
 .white-text {
