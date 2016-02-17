@@ -24,7 +24,6 @@ app.get('/recogidas/:id', function(req, res) {
 
 
 app.post('/recogidas', function(req, res) {
-  console.log(req.body);
   var id = req.body.id;
   recogidas[id] = req.body;
   res.send({ ok: true });
