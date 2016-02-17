@@ -23,7 +23,7 @@ $(function() {
 
     $.post('/recogidas', data, function(res, status, xhr) {
       localStorage.setItem("solicitud-nueva-id", data.id);
-      // location.href = "/fuente/Fuente 03.html"
+      location.href = "/fuente/Fuente 03.html"
     });
   });
 });
