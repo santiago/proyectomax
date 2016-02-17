@@ -13,9 +13,17 @@ $(function() {
   });
 
   $(".boton-recoger").click(function(e) {
-    var data = {};
+    var data = {
+      id: Date.now(),
+      fuente: "Ruta N",
+      materiales: Object.keys(selectedMaterials)
+    };
+
+    console.log(data);
+
     $.post('/recogidas', data, function(res, status, xhr) {
-      location.href = "/fuente/Fuente 03.html"
+      localStorage.setItem("solicitud-nueva-id", data.id);
+      // location.href = "/fuente/Fuente 03.html"
     });
   });
 });

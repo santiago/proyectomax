@@ -4,6 +4,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/acopio-11.js"></script>
+    <script type="text/javascript" src="js/timer.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -21,9 +22,18 @@
         <div class="row">
           <div class="col-md-12 lista-materiales lista-solicitudes nuevas">
             <ul class="list-group lista-materiales">
-              <li class="list-group-item">Fuente 1</li>
-              <li class="list-group-item">Fuente 2</li>
-              <li class="list-group-item">Fuente 3</li>
+              <li class="list-group-item hidden">
+                <table>
+                  <tr>
+                    <td><img src="rutan.png"></td>
+                    <td class="fuente" fuente="rutan">Ruta N</td>
+                  </tr>
+                </table>
+              </li>
+              <li class="list-group-item hidden">Fuente 2</li>
+              <li class="list-group-item hidden">Fuente 2</li>
+              <li class="list-group-item hidden">Fuente 3</li>
+              <li class="list-group-item sin-solicitudes">No hay solicitudes nuevas</li>
             </ul>
           </div>
         </div>
@@ -37,9 +47,21 @@
         <div class="row">
           <div class="col-md-12 lista-materiales lista-solicitudes asignadas">
             <ul class="list-group lista-materiales">
-              <li class="list-group-item">Fuente 4</li>
-              <li class="list-group-item">Fuente 5</li>
-              <li class="list-group-item">Fuente 6</li>
+              <li class="list-group-item hidden">
+                <table>
+                  <tr>
+                    <td><img src="rutan.png"></td>
+                    <td class="fuente" fuente="rutan">Ruta N</td>
+                    <td>-</td>
+                    <td class="recolector" recolector="diego">Diego Armando</td>
+                    <td>-</td>
+                    <td class="hora"> 2 : 00 PM</td>
+                  </tr>
+                </table>
+              </li>
+              <li class="list-group-item hidden">Fuente 5</li>
+              <li class="list-group-item hidden">Fuente 6</li>
+              <li class="list-group-item sin-solicitudes">No hay solicitudes asignadas</li>
             </ul>
           </div>
         </div>

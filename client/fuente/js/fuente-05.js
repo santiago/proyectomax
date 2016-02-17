@@ -29,6 +29,10 @@ $(function() {
   });
 
   $(".boton-confirmar-recogida a.btn").click(function(e) {
-    location.href = "Fuente 01.html"
+    var id = localStorage.getItem("solicitud-nueva-id");
+    $.post("/recogidas/"+id+"/delete", {}, function(res, status, xhr) {
+      localStorage.setItem("solicitud-nueva-id", null);
+      location.href = "/fuente";
+    });
   });
 });

@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/wrkbench/detect-device-webapp",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "body-parser": "1.15.0"
   }
 }
