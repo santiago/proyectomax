@@ -8,8 +8,10 @@ $(function() {
   localStorage.setItem('solicitud-seleccionada-id', null);
   localStorage.setItem('solicitud-seleccionada-fuente', null);
 
-  timerDelegate = render;
-  // $.get("/recogidas", render);
+  $.get("/recogidas", function(res, status, xhr) {
+    render(res, status, xhr)
+    timerDelegate = render;
+  });
 
   function render(res, status, xhr) {
     if(!res.length) {
@@ -22,9 +24,14 @@ $(function() {
       return !i.asignadaA
     });
 
+    var asignadasCount = asignadas.length;
     asignadas = res.filter(function(i) {
       return !!i.asignadaA
     });
+
+    if(!nuevas.length && asignadasCount == asignadas.count) {
+      return;
+    }
 
     if(!nuevas.length) {
       $(".lista-solicitudes.nuevas .sin-solicitudes").show();
@@ -37,8 +44,7 @@ $(function() {
     } else {
       $(".lista-solicitudes.asignadas .sin-solicitudes").hide();
     }
-    console.log("wtf");
-    console.log();
+
     $(".lista-solicitudes li:not(.hidden,.sin-solicitudes)").remove();
 
     res.forEach(function(i) {
