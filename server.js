@@ -13,7 +13,7 @@ var recogidas = {};
 app.get('/recogidas', function(req, res) {
   var solicitudes = Object.keys(recogidas).map(function(i) {
     return recogidas[i];
-  });
+  }).filter(function(r) { return r != null; });
   res.send(solicitudes);
 });
 

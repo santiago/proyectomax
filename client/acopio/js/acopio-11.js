@@ -8,8 +8,12 @@ $(function() {
   localStorage.setItem('solicitud-seleccionada-id', null);
   localStorage.setItem('solicitud-seleccionada-fuente', null);
 
-  $.get("/recogidas", function(res, status, xhr) {
+  timerDelegate = render;
+  // $.get("/recogidas", render);
+
+  function render(res, status, xhr) {
     if(!res.length) {
+      $(".lista-solicitudes li:not(.hidden,.sin-solicitudes)").remove();
       $(".sin-solicitudes").show();
       return;
     }
@@ -33,6 +37,9 @@ $(function() {
     } else {
       $(".lista-solicitudes.asignadas .sin-solicitudes").hide();
     }
+    console.log("wtf");
+    console.log();
+    $(".lista-solicitudes li:not(.hidden,.sin-solicitudes)").remove();
 
     res.forEach(function(i) {
       var fuente = i.fuente;
@@ -68,5 +75,5 @@ $(function() {
       localStorage.setItem('solicitud-seleccionada-fuente', fuente);
       location.href = "Acopio 9.html";
     });
-  });
+  }
 });
