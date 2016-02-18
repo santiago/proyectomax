@@ -29,7 +29,7 @@ $(function() {
       return !!i.asignadaA
     });
 
-    if(!nuevas.length && asignadasCount == asignadas.count) {
+    if(!nuevas.length && asignadasCount == asignadas.length) {
       return;
     }
 
